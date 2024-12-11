@@ -1,0 +1,5 @@
+INSERT INTO goals (goal_id, username, goal_name, target_amount, saved_amount, due_date) VALUES ('2', 'user1', 'Новый телефон', '1000', '200', '2024-12-31');
+INSERT INTO goals (goal_id, username, goal_name, target_amount, saved_amount, due_date) VALUES ('3', 'user1', 'Ремонт квартиры', '5000', '1000', '2026-01-01');
+INSERT INTO goals (goal_id, username, goal_name, target_amount, saved_amount, due_date) VALUES ('4', 'user2', 'Машина', '10000', '1500', '2027-01-01');
+INSERT INTO goals (goal_id, username, goal_name, target_amount, saved_amount, due_date) VALUES ('5', 'user2', 'Здоровье', '1500', '300', '2025-03-15');
+INSERT INTO goals (goal_id, username, goal_name, target_amount, saved_amount, due_date) VALUES ('1', 'admin', 'Отпуск', '2000', '500', '2025-06-01');

@@ -1,0 +1,10 @@
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('2', 'admin', '1', 'Еда', '2024-11-15', '500', 'expense');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('5', 'user2', '4', 'Транспор', '2024-11-18', '100', 'expense');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('6', 'admin', '1', 'Зарплата', '2024-11-10', '3000', 'income');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('7', 'admin', '1', 'Еда', '2024-11-15', '500', 'expense');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('8', 'user1', '2', 'Развлечения', '2024-11-16', '200', 'expense');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('9', 'user1', '3', 'Здоровье', '2024-11-17', '300', 'expense');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('10', 'user2', '4', 'Транспор', '2024-11-18', '100', 'expense');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('1', 'admin', '1', 'Зарплата', '2024-11-10', '3000', 'income');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('3', 'user1', '2', 'Развлечения', '2024-11-16', '200', 'income');
+INSERT INTO transactions (transaction_id, username, account_id, category_name, transaction_date, amount, type) VALUES ('4', 'user1', '3', 'Зарплата', '2024-11-17', '300', 'expense');

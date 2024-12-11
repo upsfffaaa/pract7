@@ -1,0 +1,4 @@
+INSERT INTO users (user_id, username, password, email, is_superuser, status_name) VALUES ('1', 'admin', '$2a$06$144TUwuoQ6aoiOCRAwrdEu2fe4UsiLU3vb1GU4U3TzV9S8MMIv5KO', 'admin@example.com', 'true', 'Работает');
+INSERT INTO users (user_id, username, password, email, is_superuser, status_name) VALUES ('2', 'user1', '$2a$06$DeUedIo/rE7qxBkJVqM6VeUya8oj4V6ie29NH7G93sAP12fVuYaXC', 'user1@example.com', 'false', 'На пенсии');
+INSERT INTO users (user_id, username, password, email, is_superuser, status_name) VALUES ('3', 'user2', '$2a$06$8SghfkZwdfX7t8ViDzBgceLPukO/RFG.Rssbtckkxtau90QKzI/pC', 'user2@example.com', 'false', 'Самозанятый');
+INSERT INTO users (user_id, username, password, email, is_superuser, status_name) VALUES ('5', 'user', '$2a$06$0HK3e6yNIncCR7ujY4TLTOAE/ZRTFLWV6IV1PXt9C3YgMmRczDV8K', 'user@mail.ru', 'false', 'На пенсии');

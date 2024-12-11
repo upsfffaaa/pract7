@@ -1,0 +1,11 @@
+transaction_id,username,account_id,category_name,transaction_date,amount,type
+2,admin,1,Еда,2024-11-15,500,expense
+5,user2,4,Транспор,2024-11-18,100,expense
+6,admin,1,Зарплата,2024-11-10,3000,income
+7,admin,1,Еда,2024-11-15,500,expense
+8,user1,2,Развлечения,2024-11-16,200,expense
+9,user1,3,Здоровье,2024-11-17,300,expense
+10,user2,4,Транспор,2024-11-18,100,expense
+1,admin,1,Зарплата,2024-11-10,3000,income
+3,user1,2,Развлечения,2024-11-16,200,income
+4,user1,3,Зарплата,2024-11-17,300,expense

@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>user</class>
+ <widget class="QWidget" name="user">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-color: #F9FAFB;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+       QPushButton {
+        background-color: #F3F4F6;
+        color: #1F2937;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #E5E7EB;
+       }</string>
+     </property>
+     <property name="text">
+      <string>Выход</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabs">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>5000</width>
+       <height>5000</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: #F9FAFF;</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabtransactions">
+      <attribute name="title">
+       <string>Транзакции</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_16">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_17">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>824</width>
+               <height>982</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_18">
+              <item row="2" column="0">
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab">
+                 <attribute name="title">
+                  <string>Доходы(user)</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_19">
+                  <item row="0" column="0">
+                   <widget class="QWebEngineView" name="webdoxod">
+                    <property name="minimumSize">
+                     <size>
+                      <width>750</width>
+                      <height>500</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>750</width>
+                      <height>500</height>
+                     </size>
+                    </property>
+                    <property name="tabletTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="url">
+                     <url>
+                      <string>about:blank</string>
+                     </url>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_2">
+                 <attribute name="title">
+                  <string>Расходы(user)</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_20">
+                  <item row="0" column="0">
+                   <widget class="QWebEngineView" name="webdoxod_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>750</width>
+                      <height>500</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>750</width>
+                      <height>500</height>
+                     </size>
+                    </property>
+                    <property name="tabletTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="url">
+                     <url>
+                      <string>about:blank</string>
+                     </url>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_3">
+                 <attribute name="title">
+                  <string>График</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_21">
+                  <item row="0" column="0">
+                   <widget class="QWebEngineView" name="webGraf">
+                    <property name="minimumSize">
+                     <size>
+                      <width>750</width>
+                      <height>500</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>750</width>
+                      <height>500</height>
+                     </size>
+                    </property>
+                    <property name="url">
+                     <url>
+                      <string>about:blank</string>
+                     </url>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item row="0" column="0" rowspan="2" colspan="2">
+               <widget class="QFrame" name="frame_17">
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                   <item>
+                    <widget class="QTableView" name="tabletransactions">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>300</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QTextEdit" name="textTran">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QTextEdit {
+    color: black;                      /* Цвет текста */
+    font-size: 14px;                    /* Размер шрифта */
+    background-color: white;           /* Цвет фона по умолчанию */
+    border: 1px solid #ccc;            /* Граница */
+    padding: 5px;                       /* Отступы внутри поля */
+}
+
+QTextEdit:hover {
+    background-color: #E0E7FF;         /* Цвет фона при наведении */
+}
+
+QTextEdit::placeholder {
+    color: #888;                        /* Цвет текста подсказки */
+    font-style: italic;                 /* Шрифт курсив */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_16">
+                     <item>
+                      <widget class="QPushButton" name="btnAddtransactions">
+                       <property name="styleSheet">
+                        <string notr="true">
+       QPushButton {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #6366F1;
+       }</string>
+                       </property>
+                       <property name="text">
+                        <string>Добавить</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnDeletetransactions">
+                       <property name="cursor">
+                        <cursorShape>OpenHandCursor</cursorShape>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">
+       QPushButton {
+        background-color: #F54000;
+        color: #003153;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #FF6452;
+       }</string>
+                       </property>
+                       <property name="text">
+                        <string>Удалить</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnSubmittransactions">
+                       <property name="styleSheet">
+                        <string notr="true">
+       QPushButton {
+        background-color: #60DB00;
+        color: #181513;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #9BFF4D;
+       }</string>
+                       </property>
+                       <property name="text">
+                        <string>Сохранить</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabincome_categories">
+      <attribute name="title">
+       <string>Цели</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_14">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_15">
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QTableView" name="tableGoals"/>
+               </item>
+               <item>
+                <widget class="QTextEdit" name="textGoals">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTextEdit {
+    color: black;                      /* Цвет текста */
+    font-size: 14px;                    /* Размер шрифта */
+    background-color: white;           /* Цвет фона по умолчанию */
+    border: 1px solid #ccc;            /* Граница */
+    padding: 5px;                       /* Отступы внутри поля */
+}
+
+QTextEdit:hover {
+    background-color: #E0E7FF;         /* Цвет фона при наведении */
+}
+
+QTextEdit::placeholder {
+    color: #888;                        /* Цвет текста подсказки */
+    font-style: italic;                 /* Шрифт курсив */
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QPushButton" name="btnAddGoals">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #6366F1;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Добавить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnDeleteGoals">
+                   <property name="cursor">
+                    <cursorShape>OpenHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #F54000;
+        color: #003153;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #FF6452;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Удалить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSubmitGoals">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #60DB00;
+        color: #181513;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #9BFF4D;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Сохранить</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabexpense_categories">
+      <attribute name="title">
+       <string>Категории</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_12">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_16">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_13">
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QTableView" name="tableCategories"/>
+               </item>
+               <item>
+                <widget class="QTextEdit" name="textcategory">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTextEdit {
+    color: black;                      /* Цвет текста */
+    font-size: 14px;                    /* Размер шрифта */
+    background-color: white;           /* Цвет фона по умолчанию */
+    border: 1px solid #ccc;            /* Граница */
+    padding: 5px;                       /* Отступы внутри поля */
+}
+
+QTextEdit:hover {
+    background-color: #E0E7FF;         /* Цвет фона при наведении */
+}
+
+QTextEdit::placeholder {
+    color: #888;                        /* Цвет текста подсказки */
+    font-style: italic;                 /* Шрифт курсив */
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <widget class="QPushButton" name="btnAddcategories">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #6366F1;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Добавить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnDeletecategories">
+                   <property name="cursor">
+                    <cursorShape>OpenHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #F54000;
+        color: #003153;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #FF6452;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Удалить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSubmitcategories">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #60DB00;
+        color: #181513;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #9BFF4D;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Сохранить</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabuser_status">
+      <attribute name="title">
+       <string>Статусы</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_4">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QTableView" name="tableuser_status"/>
+               </item>
+               <item>
+                <widget class="QTextEdit" name="textstatus">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTextEdit {
+    color: black;                      /* Цвет текста */
+    font-size: 14px;                    /* Размер шрифта */
+    background-color: white;           /* Цвет фона по умолчанию */
+    border: 1px solid #ccc;            /* Граница */
+    padding: 5px;                       /* Отступы внутри поля */
+}
+
+QTextEdit:hover {
+    background-color: #E0E7FF;         /* Цвет фона при наведении */
+}
+
+QTextEdit::placeholder {
+    color: #888;                        /* Цвет текста подсказки */
+    font-style: italic;                 /* Шрифт курсив */
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QPushButton" name="btnAddstatus">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #6366F1;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Добавить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnDeletestatus">
+                   <property name="cursor">
+                    <cursorShape>OpenHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #F54000;
+        color: #003153;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #FF6452;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Удалить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSubmitstatus">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #60DB00;
+        color: #181513;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #9BFF4D;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Сохранить</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabbudget">
+      <attribute name="title">
+       <string>Бюджет</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_10">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_14">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_11">
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QTableView" name="tablebudget"/>
+               </item>
+               <item>
+                <widget class="QTextEdit" name="textBud">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTextEdit {
+    color: black;                      /* Цвет текста */
+    font-size: 14px;                    /* Размер шрифта */
+    background-color: white;           /* Цвет фона по умолчанию */
+    border: 1px solid #ccc;            /* Граница */
+    padding: 5px;                       /* Отступы внутри поля */
+}
+
+QTextEdit:hover {
+    background-color: #E0E7FF;         /* Цвет фона при наведении */
+}
+
+QTextEdit::placeholder {
+    color: #888;                        /* Цвет текста подсказки */
+    font-style: italic;                 /* Шрифт курсив */
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <item>
+                  <widget class="QPushButton" name="btnAddbudget">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #6366F1;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Добавить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnDeletebudget">
+                   <property name="cursor">
+                    <cursorShape>OpenHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #F54000;
+        color: #003153;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #FF6452;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Удалить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSubmitbudget">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #60DB00;
+        color: #181513;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #9BFF4D;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Сохранить</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabplanned_transactions">
+      <attribute name="title">
+       <string>Планы</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="2" column="0">
+        <widget class="QFrame" name="frame_7">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_8">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QTableView" name="tableplanned_transactions"/>
+               </item>
+               <item>
+                <widget class="QTextEdit" name="textplan">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTextEdit {
+    color: black;                      /* Цвет текста */
+    font-size: 14px;                    /* Размер шрифта */
+    background-color: white;           /* Цвет фона по умолчанию */
+    border: 1px solid #ccc;            /* Граница */
+    padding: 5px;                       /* Отступы внутри поля */
+}
+
+QTextEdit:hover {
+    background-color: #E0E7FF;         /* Цвет фона при наведении */
+}
+
+QTextEdit::placeholder {
+    color: #888;                        /* Цвет текста подсказки */
+    font-style: italic;                 /* Шрифт курсив */
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QPushButton" name="btnAddplan">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #6366F1;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Добавить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnDeleteplan">
+                   <property name="cursor">
+                    <cursorShape>OpenHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #F54000;
+        color: #003153;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #FF6452;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Удалить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSubplan">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #60DB00;
+        color: #181513;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #9BFF4D;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Сохранить</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tablog">
+      <attribute name="title">
+       <string>Счета</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="1">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_2">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QTableView" name="tableAccounts"/>
+               </item>
+               <item>
+                <widget class="QTextEdit" name="textacc">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTextEdit {
+    color: black;                      /* Цвет текста */
+    font-size: 14px;                    /* Размер шрифта */
+    background-color: white;           /* Цвет фона по умолчанию */
+    border: 1px solid #ccc;            /* Граница */
+    padding: 5px;                       /* Отступы внутри поля */
+}
+
+QTextEdit:hover {
+    background-color: #E0E7FF;         /* Цвет фона при наведении */
+}
+
+QTextEdit::placeholder {
+    color: #888;                        /* Цвет текста подсказки */
+    font-style: italic;                 /* Шрифт курсив */
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QPushButton" name="btnAddAccounts">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #6366F1;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Добавить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnDeleteAccounts">
+                   <property name="cursor">
+                    <cursorShape>OpenHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #F54000;
+        color: #003153;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #FF6452;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Удалить</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSubmitAccounts">
+                   <property name="styleSheet">
+                    <string notr="true">
+       QPushButton {
+        background-color: #60DB00;
+        color: #181513;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+       }
+       QPushButton:hover {
+        background-color: #9BFF4D;
+       }</string>
+                   </property>
+                   <property name="text">
+                    <string>Сохранить</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,48 @@
+#Pract 7 yml файл
+
+name: Pract_seven #Название
+
+on: #указание в каких случаях выполнять
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs: #полное указание того, что надо делать
+  build:
+    runs-on: ubuntu-latest #образ
+
+    steps:
+      #Клонирование репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      #Установка Qt6 Тк проект создан на этом фреймворке на c++
+      - name: Install Qt6
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install aqtinstall
+          aqt install-qt linux desktop 6.5.0 clang_64 -O /opt/qt
+          echo "/opt/qt/6.5.0/clang_64/lib" | sudo tee /etc/ld.so.conf.d/qt6.conf
+          sudo ldconfig
+          echo "export PATH=/opt/qt/6.5.0/clang_64/bin:$PATH" >> $GITHUB_ENV
+
+      #Установка cppcheck - утилита для проверки синтаксиса в проектах make
+      - name: Install cppcheck
+        run: |
+          sudo apt-get install -y cppcheck
+
+      #Сборка проекта с использованием изначальной системы сборки qmake
+      - name: Build project
+        run: |
+          qmake -project
+          qmake
+          make
+
+      #Проверка кода с помощью cppcheck
+      - name: Run cppcheck
+        run: |
+          cppcheck --enable=all --suppress=missingIncludeSystem .

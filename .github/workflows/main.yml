@@ -22,8 +22,7 @@ jobs:
         run: |
           sudo apt-get update -y
           sudo apt-get install -y python3-pip build-essential perl coreutils \
-            libqt6sql6-mysql libqt6webengine6 libqt6charts6 libqt6sql6 \
-            libqt6webkit6 libqt6webenginecore6 libqt6webchannel6
+            libqt6sql6-mysql qt6-webengine qt6-webkit libqt6charts6 libqt6sql6
           pip3 install aqtinstall
           
       # Список доступных Qt модулей

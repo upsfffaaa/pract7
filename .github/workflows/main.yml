@@ -29,10 +29,10 @@ jobs:
         run: |
           aqt list-qt linux desktop --modules 6.6.0 gcc_64
 
-      # Установка Qt6 с доступными модулями
-      - name: Install Qt6
+      # Установка всех доступных модулей Qt6
+      - name: Install all available Qt6 modules
         run: |
-          aqt install-qt linux desktop 6.6.0 gcc_64 -O /opt/qt -m qtcharts qtconnectivity qtwebengine qtsql
+          aqt install-qt linux desktop 6.6.0 gcc_64 -O /opt/qt -m debug_info qt3d qt5compat qtcharts qtconnectivity qtdatavis3d qtgraphs qtgrpc qthttpserver qtimageformats qtlanguageserver qtlocation qtlottie qtmultimedia qtnetworkauth qtpdf qtpositioning qtquick3d qtquick3dphysics qtquickeffectmaker qtquicktimeline qtremoteobjects qtscxml qtsensors qtserialbus qtserialport qtshadertools qtspeech qtvirtualkeyboard qtwaylandcompositor qtwebchannel qtwebengine qtwebsockets qtwebview
           echo "/opt/qt/6.6.0/gcc_64/lib" | sudo tee /etc/ld.so.conf.d/qt6.conf
           sudo ldconfig
           echo "export PATH=/opt/qt/6.6.0/gcc_64/bin:$PATH" >> $GITHUB_ENV

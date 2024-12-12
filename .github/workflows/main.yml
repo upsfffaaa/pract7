@@ -23,7 +23,15 @@ jobs:
           sudo apt-get update -y
           sudo apt-get install -y python3-pip build-essential perl coreutils
           pip3 install aqtinstall
-          # Установка Qt6.6.0
+          
+      # Список доступных модулей Qt
+      - name: List available Qt modules
+        run: |
+          aqt list-qt linux desktop --modules 6.6.0 gcc_64
+
+      # Установка Qt6.6.0
+      - name: Install Qt6
+        run: |
           aqt install-qt linux desktop 6.6.0 gcc_64 -O /opt/qt -m qtbase qtsql qttools qtwebengine
           echo "/opt/qt/6.6.0/gcc_64/lib" | sudo tee /etc/ld.so.conf.d/qt6.conf
           sudo ldconfig

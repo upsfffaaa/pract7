@@ -29,8 +29,10 @@ jobs: #полное указание того, что надо делать
           echo "/opt/qt/6.5.0/gcc_64/lib" | sudo tee /etc/ld.so.conf.d/qt6.conf
           sudo ldconfig
           echo "export PATH=/opt/qt/6.5.0/gcc_64/bin:$PATH" >> $GITHUB_ENV
-
-      #Установка cppcheck - утилита для проверки синтаксиса в проектах make
+      - name: Check Qt6 installation
+        run: |
+          ls /opt/qt/6.5.0/gcc_64/bin
+        #Установка cppcheck - утилита для проверки синтаксиса в проектах make
       - name: Install cppcheck
         run: |
           sudo apt-get install -y cppcheck
@@ -38,6 +40,7 @@ jobs: #полное указание того, что надо делать
       #Сборка проекта с использованием изначальной системы сборки qmake
       - name: Build project
         run: |
+          export PATH=/opt/qt/6.5.0/gcc_64/bin:$PATH
           qmake -project
           qmake
           make
@@ -45,4 +48,5 @@ jobs: #полное указание того, что надо делать
       #Проверка кода с помощью cppcheck
       - name: Run cppcheck
         run: |
+          export PATH=/opt/qt/6.5.0/gcc_64/bin:$PATH
           cppcheck --enable=all --suppress=missingIncludeSystem .

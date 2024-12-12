@@ -1,6 +1,6 @@
-name: Pract_seven #Название
+name: Pract_seven
 
-on: #указание в каких случаях выполнять
+on:
   push:
     branches:
       - main
@@ -8,33 +8,26 @@ on: #указание в каких случаях выполнять
     branches:
       - main
 
-jobs: #полное указание того, что надо делать
+jobs:
   build:
-    runs-on: fedora-latest #образ
+    runs-on: ubuntu-latest
 
     steps:
       # Клонирование репозитория
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: List available Qt modules
-        run: |
-          pip3 install aqtinstall
-          aqt list-qt linux desktop --modules 6.6.0 gcc_64
-
-
       # Установка зависимостей и Qt6
-      - name: Install Qt6
+      - name: Install dependencies and Qt6
         run: |
-            sudo dnf update -y
-            sudo dnf install -y python3-pip gcc gcc-c++ make perl coreutils
-            pip3 install aqtinstall
-            # Установка Qt6.6.0 с доступными модулями
-            aqt install-qt linux desktop 6.6.0 gcc_64 -O /opt/qt -m qtbase qttools
-            echo "/opt/qt/6.6.0/gcc_64/lib" | sudo tee /etc/ld.so.conf.d/qt6.conf
-            sudo ldconfig
-            echo "export PATH=/opt/qt/6.6.0/gcc_64/bin:$PATH" >> $GITHUB_ENV
-
+          sudo apt-get update -y
+          sudo apt-get install -y python3-pip build-essential perl coreutils
+          pip3 install aqtinstall
+          # Установка Qt6.6.0
+          aqt install-qt linux desktop 6.6.0 gcc_64 -O /opt/qt -m qtbase qtsql qttools qtwebengine
+          echo "/opt/qt/6.6.0/gcc_64/lib" | sudo tee /etc/ld.so.conf.d/qt6.conf
+          sudo ldconfig
+          echo "export PATH=/opt/qt/6.6.0/gcc_64/bin:$PATH" >> $GITHUB_ENV
 
       # Проверка установки Qt6
       - name: Check Qt6 installation
@@ -44,7 +37,7 @@ jobs: #полное указание того, что надо делать
       # Установка cppcheck для проверки кода
       - name: Install cppcheck
         run: |
-          sudo dnf install -y cppcheck
+          sudo apt-get install -y cppcheck
 
       # Сборка проекта с использованием системы сборки qmake
       - name: Build project
